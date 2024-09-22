@@ -20,17 +20,17 @@
 
 **Methodology:**
 
-1. Data Preprocessing:
+  - Data Preprocessing:
     - Normalized the pixel values to be between 0 and 1.
     - Applied one-hot encoding to the class labels.
-2. Model Architecture:
-  - The CNN model was built using the Keras library with the following architecture:
-    - Convolutional Layers: Used a Sequential model with multiple Conv2D layers with ReLU activation and Batch Normalization.
-    - Pooling Layers: MaxPooling2D layers to reduce spatial dimensions.
-    - Dropout Layers: Dropout layers to prevent overfitting.
-    - Fully Connected Layers: Dense layers with ReLU activation and Batch Normalization.
-    - Output Layer: Dense layer with softmax activation for classification.
-3. Training:
+  - Model Architecture:
+    - The CNN model was built using the Keras library with the following architecture:
+      - Convolutional Layers: Used a Sequential model with multiple Conv2D layers with ReLU activation and Batch Normalization.
+      - Pooling Layers: MaxPooling2D layers to reduce spatial dimensions.
+      - Dropout Layers: Dropout layers to prevent overfitting.
+      - Fully Connected Layers: Dense layers with ReLU activation and Batch Normalization.
+      - Output Layer: Dense layer with softmax activation for classification.
+  - Training:
     - Compiled the model with categorical cross-entropy loss and Adam optimizer.
     - Trained the model for 50 epochs with a batch size of 64.
     - The training process included data augmentation and callbacks for learning rate scheduling and early stopping.
